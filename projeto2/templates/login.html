@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <label>Login</label>
+    <form action="/acesso" method='post'>
+        <input type="text" name="login" id="logincss">
+        <input type="password" name="senha" id="senhacss">
+        <button type="submit"> Enviar </button>
+
+    </form>
+{% endblock %}

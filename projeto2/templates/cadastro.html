@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <label for="cadastro-label">Cadastro</label>
+    <form action="/cadastro" method='post'>
+        <input type="text" name="cadastro_nome" id="cadastro_nome" placeholder="Nome"><br><br>
+        <input type="email" name="cadastro_email" id="cadastro_email" placeholder="Email"><br><br>
+        <input type="number" name="cadastro_idade" id="cadastro_idade" placeholder="Idade"><br><br>
+        <input type="text" name="cadastro_telefone" id="cadastro_telefone" placeholder="Telefone"><br><br>
+        <input type="password" name="cadastro_password" id="cadastro_password" placeholder="Password"><br><br>
+        <button type="submit"> Enviar </button>
+
+    </form>
+
+
+    
+{% endblock %}
